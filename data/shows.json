@@ -1,0 +1,331 @@
+[
+  {
+    "slug": "gummi-bears",
+    "title": "Adventures of the Gummi Bears",
+    "year": 1985,
+    "blurb": "A small colony of Gummi Bears keeps an old magic recipe safe while ogres and a nosy knight keep wandering into the forest.",
+    "characters": ["Zummi", "Grammi", "Gruffi", "Tummi", "Sunni", "Cubbi", "Cavin", "Duke Igthorn", "Toadwart"],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-3e009d74-3e85-4442-9e1d-face94394f89",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Adventures+of+the+Gummi+Bears&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Adventures%20of%20the%20Gummi%20Bears",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Adventures%20of%20the%20Gummi%20Bears",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "ducktales",
+    "title": "DuckTales",
+    "year": 1987,
+    "blurb": "Scrooge McDuck would rather count gold than babysit, until Huey, Dewey, and Louie turn his fortune into a series of treasure hunts.",
+    "characters": [
+      "Scrooge McDuck",
+      "Huey",
+      "Dewey",
+      "Louie",
+      "Launchpad McQuack",
+      "Webby Vanderquack",
+      "Mrs. Beakley",
+      "Duckworth",
+      "Magica De Spell",
+      "Flintheart Glomgold",
+      "Gyro Gearloose",
+      "Beagle Boys"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-d21f9ec9-14f4-4c26-ba02-199108dac9ff",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=DuckTales+1987&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=DuckTales%201987",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=DuckTales%201987",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "winnie-the-pooh",
+    "title": "The New Adventures of Winnie the Pooh",
+    "year": 1988,
+    "blurb": "In the Hundred Acre Wood, Pooh, Piglet, Tigger, and the rest turn tiny problems into a whole afternoon.",
+    "characters": [
+      "Winnie the Pooh",
+      "Piglet",
+      "Tigger",
+      "Eeyore",
+      "Rabbit",
+      "Owl",
+      "Christopher Robin",
+      "Gopher",
+      "Kanga",
+      "Roo"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-37e046e7-dbb6-48bf-83e2-19b3bed78186",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=The+New+Adventures+of+Winnie+the+Pooh&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=The%20New%20Adventures%20of%20Winnie%20the%20Pooh",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=The%20New%20Adventures%20of%20Winnie%20the%20Pooh",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "rescue-rangers",
+    "title": "Chip 'n Dale: Rescue Rangers",
+    "year": 1989,
+    "blurb": "Chip and Dale run a detective crew for cases that happen underfoot, with Gadget inventing the getaway plan.",
+    "characters": ["Chip", "Dale", "Gadget Hackwrench", "Monterey Jack", "Zipper", "Fat Cat", "Professor Nimnul"],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-e726147e-3ac5-4ecf-b5f4-debf38e9a78a",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Chip+n+Dale+Rescue+Rangers+1989&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Chip%20n%20Dale%20Rescue%20Rangers",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Chip%20n%20Dale%20Rescue%20Rangers",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "talespin",
+    "title": "TaleSpin",
+    "year": 1990,
+    "blurb": "Baloo and Kit fly cargo out of Cape Suzette for Higher for Hire, usually with air pirates somewhere in the clouds.",
+    "characters": [
+      "Baloo",
+      "Kit Cloudkicker",
+      "Rebecca Cunningham",
+      "Molly Cunningham",
+      "Wildcat",
+      "Louie",
+      "Don Karnage",
+      "Shere Khan"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-1544a003-8113-4d2b-a55e-404662e8f31c",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=TaleSpin&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=TaleSpin",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=TaleSpin",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "darkwing-duck",
+    "title": "Darkwing Duck",
+    "year": 1991,
+    "blurb": "By day Drake Mallard is a suburban dad. By night he is St. Canard's loudest masked crimefighter, with Launchpad at the controls.",
+    "characters": [
+      "Darkwing Duck",
+      "Drake Mallard",
+      "Launchpad McQuack",
+      "Gosalyn Mallard",
+      "Honker Muddlefoot",
+      "Negaduck",
+      "Megavolt",
+      "Bushroot",
+      "Liquidator",
+      "Quackerjack"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-dbcf0929-f00a-4523-8e57-ad6d582c5428",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Darkwing+Duck&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Darkwing%20Duck",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Darkwing%20Duck",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "goof-troop",
+    "title": "Goof Troop",
+    "year": 1992,
+    "blurb": "Goofy and his son Max move to Spoonerville and end up next door to Pete, which is plenty of plot for any afternoon.",
+    "characters": ["Goofy", "Max Goof", "Pete", "P.J.", "Peg", "Pistol"],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-1ffff54e-8da9-472d-8594-39405f7d7e28",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Goof+Troop&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Goof%20Troop",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Goof%20Troop",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "gargoyles",
+    "title": "Gargoyles",
+    "year": 1994,
+    "blurb": "Goliath's clan wakes from a long stone sleep atop a Manhattan skyscraper and tries to protect a city that does not quite believe in them.",
+    "characters": [
+      "Goliath",
+      "Hudson",
+      "Brooklyn",
+      "Broadway",
+      "Lexington",
+      "Bronx",
+      "Demona",
+      "Elisa Maza",
+      "David Xanatos",
+      "Angela"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-a1654073-b1a9-4da5-b54e-e100eb3816f1",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Gargoyles+1994&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Gargoyles",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Gargoyles%201994",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "ducktales-2017",
+    "title": "DuckTales (2017)",
+    "year": 2017,
+    "blurb": "A later take on Scrooge's family expeditions, with the triplets, Webby, and Launchpad chasing secrets Scrooge would rather keep buried.",
+    "characters": [
+      "Scrooge McDuck",
+      "Huey",
+      "Dewey",
+      "Louie",
+      "Webby Vanderquack",
+      "Launchpad McQuack",
+      "Mrs. Beakley",
+      "Donald Duck",
+      "Della Duck",
+      "Magica De Spell",
+      "Flintheart Glomgold",
+      "Lena Sabrewing"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-4da7fce0-527a-41c8-b6ef-35b2aae22143",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=DuckTales+2017&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=DuckTales%202017",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=DuckTales%202017",
+        "detail": "Find a library copy"
+      }
+    ]
+  }
+]

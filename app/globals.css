@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6efe2;
+  --ink: #1c2430;
+  --navy: #16263a;
+  --card: #fffaf3;
+  --line: #e4d3b8;
+  --muted: #4e453b;
+  --coral: #c4492c;
+  --gold: #f3d48a;
+  --teal: #0c5c52;
+  --focus: #0b5cab;
+}
+
+@theme inline {
+  --font-sans: var(--font-nunito), "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-navy: var(--navy);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-coral: var(--coral);
+  --color-gold: var(--gold);
+  --color-teal: var(--teal);
+  --color-focus: var(--focus);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #f3d48a;
+  color: #1c2430;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
