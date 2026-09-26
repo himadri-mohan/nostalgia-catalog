@@ -9,7 +9,11 @@ export function showMetaDescription(show: Show): string {
   if (room < 24) {
     return `${lead.trim()} Official links only.${tail}`.slice(0, MAX_DESCRIPTION);
   }
-  const blurb =
-    show.blurb.length > room ? `${show.blurb.slice(0, room - 1).trimEnd()}…` : show.blurb;
-  return `${lead}${blurb}${tail}`;
+  if (show.blurb.length <= room) {
+    return `${lead}${show.blurb}${tail}`;
+  }
+  const slice = show.blurb.slice(0, Math.max(0, room - 1));
+  const lastSpace = slice.lastIndexOf(" ");
+  const trimmed = (lastSpace > 24 ? slice.slice(0, lastSpace) : slice).trimEnd();
+  return `${lead}${trimmed}…${tail}`;
 }

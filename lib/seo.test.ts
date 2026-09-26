@@ -17,5 +17,5 @@ test("show descriptions stay within a typical meta length", () => {
   const description = showMetaDescription(show);
   assert.ok(description.length <= 160, description);
   assert.match(description, /Winnie the Pooh/);
-  assert.match(description, /No video is hosted here/);
+  assert.match(description, /[a-z]… No video is hosted here\./);
 });
