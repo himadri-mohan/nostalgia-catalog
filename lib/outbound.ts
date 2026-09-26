@@ -7,10 +7,12 @@ export async function resolveLegalLinks(sources: LegalSource[]): Promise<Resolve
   const env = process.env;
   return sources.map((source) => {
     const provider = inferProvider(source.url);
+    const href = applyAffiliate(source.url, provider, env);
     return {
       ...source,
       provider,
-      href: applyAffiliate(source.url, provider, env),
+      href,
+      sponsored: href !== source.url,
     };
   });
 }

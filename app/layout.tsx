@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Nunito } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { getSiteUrl, HOME_DESCRIPTION, HOME_TITLE, SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -15,26 +16,26 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  ? process.env.NEXT_PUBLIC_SITE_URL
-  : process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: getSiteUrl(),
   title: {
-    default: "Nostalgia Catalog",
-    template: "%s · Nostalgia Catalog",
+    default: HOME_TITLE,
+    template: `%s · ${SITE_NAME}`,
   },
-  description:
-    "Find where to watch classic cartoons legally. Official streaming, store, and library links only. This site does not host video.",
-  applicationName: "Nostalgia Catalog",
+  description: HOME_DESCRIPTION,
+  applicationName: SITE_NAME,
   openGraph: {
-    title: "Nostalgia Catalog",
-    description:
-      "A fan-made directory of official places to watch classic cartoons. No video is hosted here.",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     type: "website",
+    siteName: SITE_NAME,
+    locale: "en_US",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
   },
 };
 

@@ -8,6 +8,10 @@ export type LegalSource = {
   detail: string;
 };
 
+export const shelves = ["india-original", "india-import", "classic"] as const;
+
+export type Shelf = (typeof shelves)[number];
+
 export type Show = {
   slug: string;
   title: string;
@@ -15,9 +19,11 @@ export type Show = {
   blurb: string;
   characters: string[];
   legalSources: LegalSource[];
+  shelf: Shelf;
 };
 
 export type ResolvedLink = LegalSource & {
   href: string;
   provider: AffiliateProvider;
+  sponsored: boolean;
 };

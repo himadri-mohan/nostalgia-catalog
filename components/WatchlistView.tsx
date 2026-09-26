@@ -37,7 +37,11 @@ export function WatchlistView({ shows }: { shows: Show[] }) {
         </p>
       ) : saved.length === 0 ? (
         <div className="mt-8 rounded-2xl border border-dashed border-line bg-card px-5 py-8">
-          <p className="text-ink">Your watchlist is empty.</p>
+          <p className="font-extrabold text-navy">Nothing saved on this device yet</p>
+          <p className="mt-2 max-w-xl text-muted">
+            Open a show and choose Add to watchlist. Tags and notes stay in this browser with the
+            show, and clearing site data removes them. There is no account to sign in to.
+          </p>
           <Link href="/" className="mt-4 inline-flex min-h-11 items-center font-extrabold text-teal">
             Browse the catalog
           </Link>

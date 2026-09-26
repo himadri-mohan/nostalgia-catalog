@@ -15,7 +15,7 @@ Personal watchlist items, tags, and notes stay in `localStorage` on the device. 
 | `/watchlist` | Shows saved in this browser, with their tags and notes. |
 | `/shows` | Redirects to the catalog. |
 
-Seed data lives in [`data/shows.json`](data/shows.json). Disney+ entries point at official series pages. Amazon, Apple TV, and WorldCat entries are searches on those services.
+Seed data lives in [`data/shows.json`](data/shows.json). The shelf covers Indian kids' television (Pogo, Nickelodeon, Cartoon Network, Disney Channel, and Hungama-era series) plus Disney Afternoon classics. Disney+ and Paramount+ entries point at official series pages. Amazon, Apple TV, and WorldCat entries are searches on those services.
 
 ## Run locally
 
@@ -42,31 +42,13 @@ npm run build
 
 | Variable | Fallback | Applied to | Query param |
 | --- | --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | `https://$VERCEL_URL`, then localhost | Canonical, Open Graph, sitemap, robots | — |
 | `AFFILIATE_AMAZON_TAG` | `NEXT_PUBLIC_AFFILIATE_AMAZON_TAG` | `amazon.com` links | `tag` |
 | `AFFILIATE_APPLE_AT` | `NEXT_PUBLIC_AFFILIATE_APPLE_AT` | Apple TV links | `at` |
 | `AFFILIATE_DISNEY_CID` | `NEXT_PUBLIC_AFFILIATE_DISNEY_CID` | `disneyplus.com` links | `cid` |
 
-The server-only name wins when both are set. Values may use letters, numbers, dots, underscores, tildes, and hyphens (up to 80 characters). Anything else is ignored so a bad value cannot rewrite the URL. WorldCat links never receive an affiliate param.
+The server-only name wins when both are set. Values may use letters, numbers, dots, underscores, tildes, and hyphens (up to 80 characters). Anything else is ignored so a bad value cannot rewrite the URL. WorldCat and Paramount+ links never receive an affiliate param.
 
-Example `.env.local` (placeholders only):
-
-```bash
-AFFILIATE_AMAZON_TAG=
-AFFILIATE_APPLE_AT=
-AFFILIATE_DISNEY_CID=
-```
-
-## Deploy on Vercel from this GitHub repo
-
-The app is a Next.js App Router project. [`vercel.json`](vercel.json) pins the framework to Next.js, installs with `npm ci`, and builds with `npm run build`. That file overrides the project settings, including a project that was connected when this repository only contained a README. Vercel treats that first import as a static site and then looks for a `public` output directory, which this app does not create. Root directory stays the repo root.
-
-1. Push this repository to GitHub (`himadri-mohan/nostalgia-catalog`).
-2. Sign in at [vercel.com/new](https://vercel.com/new).
-3. Import the GitHub repository. If it is not listed, grant Vercel access to the repo first.
-4. Leave the root directory as the repo root. `vercel.json` supplies the Next.js preset, install command, and build command.
-5. Open **Environment Variables** and add any affiliate ids you want, using the names in the table above. You can skip them and add them later.
-6. Deploy.
-
-After the first deploy, Vercel builds on each push to the connected branch. To change an affiliate id, update the variable in **Project → Settings → Environment Variables**, then redeploy so the running server picks up the new value.
+Deploy steps, the Vercel variable checklist, and the post-deploy smoke test are in [`DEPLOY.md`](DEPLOY.md). [`vercel.json`](vercel.json) pins the framework to Next.js, installs with `npm ci`, and builds with `npm run build`. That overrides project settings from when this repository only contained a README and Vercel treated the import as a static site looking for a `public` directory.
 
 Do not put real affiliate ids in `data/shows.json`, `.env.example`, or any committed file.

@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Watchlist",
   description:
     "Shows, tags, and notes saved in this browser. Nostalgia Catalog does not store an account or host video.",
+  alternates: { canonical: "/watchlist" },
+  robots: { index: false, follow: true },
 };
 
 export default function WatchlistPage() {
