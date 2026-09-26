@@ -2,10 +2,10 @@ const LOCAL_ORIGIN = "http://localhost:3000";
 
 export const SITE_NAME = "Nostalgia Catalog";
 
-export const HOME_TITLE = "Nostalgia Catalog — Where to Watch Classic Cartoons Legally";
+export const HOME_TITLE = "Nostalgia Catalog — Where to Watch Classic and Indian Cartoons Legally";
 
 export const HOME_DESCRIPTION =
-  "Search classic cartoons by title or character and open official streaming, store, and library links. Affiliate links are disclosed. No video is hosted here.";
+  "Search Indian kids' TV and Disney Afternoon classics, from Chhota Bheem and Doraemon to DuckTales. Official store, streamer, and library links only. No video is hosted here.";
 
 export function getSiteUrl(): URL {
   const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();

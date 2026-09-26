@@ -1,5 +1,5 @@
 import showsJson from "@/data/shows.json";
-import type { Show } from "./types";
+import { shelves, type Shelf, type Show } from "./types";
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const VIDEO_FILE_PATTERN = /\.(?:mp4|m3u8|mkv|avi|webm|mov|ts)(?:$|\?)/i;
@@ -83,6 +83,14 @@ function assertShow(value: unknown, index: number): Show {
     };
   });
 
+  let shelf: Shelf = "classic";
+  if (show.shelf !== undefined) {
+    if (typeof show.shelf !== "string" || !shelves.includes(show.shelf as Shelf)) {
+      throw new Error(`Show ${label} has an unknown shelf`);
+    }
+    shelf = show.shelf as Shelf;
+  }
+
   return {
     slug: show.slug,
     title: show.title.trim(),
@@ -90,6 +98,7 @@ function assertShow(value: unknown, index: number): Show {
     blurb: show.blurb.trim(),
     characters: show.characters.map((name) => (name as string).trim()),
     legalSources,
+    shelf,
   };
 }
 

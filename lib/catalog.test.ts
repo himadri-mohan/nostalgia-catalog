@@ -13,7 +13,11 @@ type SeedShow = {
 
 test("seed catalog is a launch-sized set of official https links", () => {
   const shows = JSON.parse(readFileSync(new URL("../data/shows.json", import.meta.url), "utf8")) as SeedShow[];
-  assert.ok(shows.length >= 15 && shows.length <= 25, `expected 15–25 shows, got ${shows.length}`);
+  assert.ok(shows.length >= 40 && shows.length <= 80, `expected 40–80 shows, got ${shows.length}`);
+  const slugs = new Set(shows.map((show) => show.slug));
+  for (const slug of ["chhota-bheem", "doraemon", "ducktales", "motu-patlu"]) {
+    assert.ok(slugs.has(slug), `missing ${slug}`);
+  }
   assert.equal(new Set(shows.map((show) => show.slug)).size, shows.length);
 
   for (const show of shows) {

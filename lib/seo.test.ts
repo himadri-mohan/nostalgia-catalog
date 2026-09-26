@@ -11,6 +11,7 @@ const show: Show = {
     "In the Hundred Acre Wood, Pooh, Piglet, Tigger, and the rest turn tiny problems into a whole afternoon.",
   characters: ["Winnie the Pooh"],
   legalSources: [],
+  shelf: "classic",
 };
 
 test("show descriptions stay within a typical meta length", () => {

@@ -15,7 +15,7 @@ Personal watchlist items, tags, and notes stay in `localStorage` on the device. 
 | `/watchlist` | Shows saved in this browser, with their tags and notes. |
 | `/shows` | Redirects to the catalog. |
 
-Seed data lives in [`data/shows.json`](data/shows.json). Disney+ and Paramount+ entries point at official series pages. Amazon, Apple TV, and WorldCat entries are searches on those services.
+Seed data lives in [`data/shows.json`](data/shows.json). The shelf covers Indian kids' television (Pogo, Nickelodeon, Cartoon Network, Disney Channel, and Hungama-era series) plus Disney Afternoon classics. Disney+ and Paramount+ entries point at official series pages. Amazon, Apple TV, and WorldCat entries are searches on those services.
 
 ## Run locally
 

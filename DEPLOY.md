@@ -36,6 +36,8 @@ Only set an id from an affiliate program you are allowed to use. This app does n
 
 `VERCEL_URL` is provided by Vercel. Do not add it yourself.
 
+No analytics variables are required. This app does not use Vercel Analytics or any paid analytics package.
+
 ## Post-deploy smoke test
 
 Replace `https://your-domain.example` with the deployment URL.

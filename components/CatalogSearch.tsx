@@ -3,8 +3,56 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useId, useMemo, useState, type FormEvent } from "react";
-import { matchShows } from "@/lib/search";
-import type { Show } from "@/lib/types";
+import { matchShows, type ShowMatch } from "@/lib/search";
+import type { Shelf, Show } from "@/lib/types";
+
+const shelfOrder: { shelf: Shelf; heading: string; intro: string }[] = [
+  {
+    shelf: "india-original",
+    heading: "Made in India",
+    intro: "Pogo, Nickelodeon, Hungama, and other Indian originals.",
+  },
+  {
+    shelf: "india-import",
+    heading: "Indian kids' TV and Hindi dubs",
+    intro: "Cartoon Network, Nickelodeon, Disney Channel, Hungama, and Pogo imports people actually watched.",
+  },
+  {
+    shelf: "classic",
+    heading: "Disney Afternoon and other classics",
+    intro: "The global shelf, including DuckTales, TaleSpin, and the rest of the afternoon block.",
+  },
+];
+
+function ShowCards({ matches }: { matches: ShowMatch[] }) {
+  return (
+    <ul className="mt-4 grid gap-4 sm:grid-cols-2">
+      {matches.map(({ show, matchedCharacter }) => (
+        <li key={show.slug}>
+          <Link
+            href={`/shows/${show.slug}`}
+            className="flex h-full flex-col rounded-2xl border border-line bg-card p-5 no-underline shadow-sm transition hover:border-teal"
+          >
+            <span className="w-fit rounded-full bg-gold px-2.5 py-1 text-xs font-extrabold text-navy">
+              <time dateTime={String(show.year)}>{show.year}</time>
+            </span>
+            <span className="mt-3 font-display text-2xl leading-tight text-navy">{show.title}</span>
+            <span className="mt-2 text-sm leading-6 text-muted">{show.blurb}</span>
+            {matchedCharacter ? (
+              <span className="mt-3 text-sm font-bold text-teal">Character match: {matchedCharacter}</span>
+            ) : (
+              <span className="mt-3 text-sm text-ink">
+                {show.characters.slice(0, 4).join(", ")}
+                {show.characters.length > 4 ? ` +${show.characters.length - 4}` : ""}
+              </span>
+            )}
+            <span className="mt-4 text-sm font-extrabold text-coral">Where to watch legally</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export function CatalogSearch({ shows }: { shows: Show[] }) {
   const router = useRouter();
@@ -29,11 +77,12 @@ export function CatalogSearch({ shows }: { shows: Show[] }) {
         id="catalog-heading"
         className="mt-2 max-w-3xl font-display text-4xl leading-tight text-navy sm:text-5xl"
       >
-        Find the official door for a classic cartoon.
+        Where to watch classic and Indian cartoons legally.
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-        Search a show title or any character name across {shows.length} classic series. Results open
-        official streaming, store, and library links. Nothing plays on this site.
+        Search {shows.length} series from Pogo, Nickelodeon, Cartoon Network, Disney Channel, Hungama,
+        and the Disney Afternoon. Open a show for official store, streamer, and library links. Nothing
+        plays on this site.
       </p>
 
       <form role="search" className="mt-6" onSubmit={onSubmit}>
@@ -46,7 +95,7 @@ export function CatalogSearch({ shows }: { shows: Show[] }) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Try Scooby, Yakko, or Scrooge"
+            placeholder="Try Bheem, Doraemon, or Scrooge"
             autoComplete="off"
             className="min-h-12 w-full rounded-xl border border-line bg-card px-4 text-base text-ink shadow-sm"
           />
@@ -73,38 +122,28 @@ export function CatalogSearch({ shows }: { shows: Show[] }) {
             <p className="font-extrabold text-navy">No matches on the shelf</p>
             <p className="mt-2 text-muted">
               Nothing in this catalog matches that title or character. The list only includes shows
-              with an official page, store, or library link. Try a shorter name, such as Baloo,
-              Scooby, or Pooh.
+              with an official page, store, or library link. Try a shorter name, such as Bheem,
+              Doraemon, or Scrooge.
             </p>
           </div>
+        ) : trimmed ? (
+          <ShowCards matches={results} />
         ) : (
-          <ul className="mt-4 grid gap-4 sm:grid-cols-2">
-            {results.map(({ show, matchedCharacter }) => (
-              <li key={show.slug}>
-                <Link
-                  href={`/shows/${show.slug}`}
-                  className="flex h-full flex-col rounded-2xl border border-line bg-card p-5 no-underline shadow-sm transition hover:border-teal"
-                >
-                  <span className="w-fit rounded-full bg-gold px-2.5 py-1 text-xs font-extrabold text-navy">
-                    <time dateTime={String(show.year)}>{show.year}</time>
-                  </span>
-                  <span className="mt-3 font-display text-2xl leading-tight text-navy">{show.title}</span>
-                  <span className="mt-2 text-sm leading-6 text-muted">{show.blurb}</span>
-                  {matchedCharacter ? (
-                    <span className="mt-3 text-sm font-bold text-teal">
-                      Character match: {matchedCharacter}
-                    </span>
-                  ) : (
-                    <span className="mt-3 text-sm text-ink">
-                      {show.characters.slice(0, 4).join(", ")}
-                      {show.characters.length > 4 ? ` +${show.characters.length - 4}` : ""}
-                    </span>
-                  )}
-                  <span className="mt-4 text-sm font-extrabold text-coral">Where to watch</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          shelfOrder.map((group) => {
+            const matches = results.filter((match) => match.show.shelf === group.shelf);
+            if (matches.length === 0) return null;
+            return (
+              <section key={group.shelf} aria-labelledby={`${group.shelf}-heading`} className="mt-8">
+                <h3 id={`${group.shelf}-heading`} className="font-display text-3xl text-navy">
+                  {group.heading}
+                </h3>
+                <p className="mt-1 text-sm text-muted">
+                  {matches.length === 1 ? "1 show" : `${matches.length} shows`}. {group.intro}
+                </p>
+                <ShowCards matches={matches} />
+              </section>
+            );
+          })
         )}
       </div>
     </section>

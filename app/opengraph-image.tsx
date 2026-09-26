@@ -25,7 +25,7 @@ export default function OpenGraphImage() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex", fontSize: 76, lineHeight: 1.05 }}>Nostalgia Catalog</div>
           <div style={{ display: "flex", marginTop: 24, fontSize: 34, lineHeight: 1.3 }}>
-            Where to watch classic cartoons legally
+            Classic and Indian cartoons, legal links only
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 26, color: "#f3d48a" }}>

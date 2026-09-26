@@ -11,6 +11,7 @@ const shows: Show[] = [
     blurb: "Scrooge and his nephews chase treasure.",
     characters: ["Scrooge McDuck", "Launchpad McQuack", "Webby Vanderquack"],
     legalSources: [],
+    shelf: "classic",
   },
   {
     slug: "talespin",
@@ -19,6 +20,7 @@ const shows: Show[] = [
     blurb: "Baloo and Kit fly cargo.",
     characters: ["Baloo", "Kit Cloudkicker"],
     legalSources: [],
+    shelf: "classic",
   },
   {
     slug: "ducktales-2017",
@@ -27,6 +29,7 @@ const shows: Show[] = [
     blurb: "A later Scrooge expedition.",
     characters: ["Scrooge McDuck", "Dewey"],
     legalSources: [],
+    shelf: "classic",
   },
 ];
 

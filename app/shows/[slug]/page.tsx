@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ShowLibrary } from "@/components/ShowLibrary";
 import { getShow, getShows } from "@/lib/catalog";
 import { resolveLegalLinks } from "@/lib/outbound";
-import { showMetaDescription } from "@/lib/seo";
+import { showDiscoveryCopy, showMetaDescription } from "@/lib/seo";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 type ShowPageProps = {
@@ -26,10 +26,10 @@ export async function generateMetadata({ params }: ShowPageProps): Promise<Metad
 
   const description = showMetaDescription(show);
   const path = `/shows/${show.slug}`;
-  const title = `Where to watch ${show.title} (${show.year})`;
+  const title = `Where to Watch ${show.title} (${show.year}) Legally`;
 
   return {
-    title: `${show.title} (${show.year})`,
+    title,
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -77,8 +77,11 @@ export default async function ShowPage({ params }: ShowPageProps) {
         <p className="mt-4 text-sm font-extrabold uppercase tracking-[0.16em] text-teal">
           <time dateTime={String(show.year)}>{show.year}</time>
         </p>
-        <h1 className="mt-2 font-display text-4xl leading-tight text-navy sm:text-5xl">{show.title}</h1>
+        <h1 className="mt-2 font-display text-4xl leading-tight text-navy sm:text-5xl">
+          Where to watch {show.title}
+        </h1>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-ink">{show.blurb}</p>
+        <p className="mt-3 max-w-2xl text-base leading-7 text-muted">{showDiscoveryCopy(show.shelf)}</p>
 
         <section aria-labelledby="characters-heading" className="mt-8">
           <h2 id="characters-heading" className="font-display text-3xl text-navy">

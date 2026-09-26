@@ -1,9 +1,19 @@
-import type { Show } from "./types";
+import type { Shelf, Show } from "./types";
 
 const MAX_DESCRIPTION = 160;
 
+export function showDiscoveryCopy(shelf: Shelf): string {
+  if (shelf === "india-original") {
+    return "This is an Indian kids' series. The buttons below are legal discovery links to official pages, store searches, and libraries. Nothing plays on this site.";
+  }
+  if (shelf === "india-import") {
+    return "Kids in India watched this on channels such as Cartoon Network, Nickelodeon, Disney Channel, Hungama, or Pogo, often in Hindi. The buttons below are legal discovery links only. Nothing plays on this site.";
+  }
+  return "This classic sits with the Disney Afternoon and other global series. The buttons below are legal discovery links only. Nothing plays on this site.";
+}
+
 export function showMetaDescription(show: Show): string {
-  const lead = `Where to watch ${show.title} (${show.year}) legally. `;
+  const lead = `Legal places to watch ${show.title} (${show.year}). `;
   const tail = " No video is hosted here.";
   const room = MAX_DESCRIPTION - lead.length - tail.length;
   if (room < 24) {
