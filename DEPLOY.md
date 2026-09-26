@@ -9,7 +9,7 @@ Real affiliate ids belong in Vercel, never in git. Leave a variable blank to pub
 1. Push `himadri-mohan/nostalgia-catalog` to GitHub if it is not already there.
 2. Sign in at [vercel.com/new](https://vercel.com/new).
 3. Import the GitHub repository. Grant Vercel access to the repo if it is not listed.
-4. Leave the framework preset as **Next.js**. Root directory is the repo root. Build command is `npm run build`. Install command is `npm install`. Do not set a custom output directory.
+4. Leave the root directory as the repo root. [`vercel.json`](vercel.json) pins the framework to Next.js, installs with `npm ci`, and builds with `npm run build`. It leaves the output directory as the Next.js default. That overrides project settings from an earlier import, when this repository only contained a README and Vercel treated it as a static site looking for a `public` directory.
 5. Add the environment variables below, then deploy.
 
 Vercel builds again on each push to the connected branch. After you change an environment variable, redeploy so the running server picks up the new value.

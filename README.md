@@ -49,6 +49,6 @@ npm run build
 
 The server-only name wins when both are set. Values may use letters, numbers, dots, underscores, tildes, and hyphens (up to 80 characters). Anything else is ignored so a bad value cannot rewrite the URL. WorldCat and Paramount+ links never receive an affiliate param.
 
-Deploy steps, the full Vercel variable checklist, and the post-deploy smoke test are in [`DEPLOY.md`](DEPLOY.md).
+Deploy steps, the Vercel variable checklist, and the post-deploy smoke test are in [`DEPLOY.md`](DEPLOY.md). [`vercel.json`](vercel.json) pins the framework to Next.js, installs with `npm ci`, and builds with `npm run build`. That overrides project settings from when this repository only contained a README and Vercel treated the import as a static site looking for a `public` directory.
 
 Do not put real affiliate ids in `data/shows.json`, `.env.example`, or any committed file.
