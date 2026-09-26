@@ -4,7 +4,17 @@
     "title": "Adventures of the Gummi Bears",
     "year": 1985,
     "blurb": "A small colony of Gummi Bears keeps an old magic recipe safe while ogres and a nosy knight keep wandering into the forest.",
-    "characters": ["Zummi", "Grammi", "Gruffi", "Tummi", "Sunni", "Cubbi", "Cavin", "Duke Igthorn", "Toadwart"],
+    "characters": [
+      "Zummi",
+      "Grammi",
+      "Gruffi",
+      "Tummi",
+      "Sunni",
+      "Cubbi",
+      "Cavin",
+      "Duke Igthorn",
+      "Toadwart"
+    ],
     "legalSources": [
       {
         "name": "Disney+",
@@ -115,7 +125,15 @@
     "title": "Chip 'n Dale: Rescue Rangers",
     "year": 1989,
     "blurb": "Chip and Dale run a detective crew for cases that happen underfoot, with Gadget inventing the getaway plan.",
-    "characters": ["Chip", "Dale", "Gadget Hackwrench", "Monterey Jack", "Zipper", "Fat Cat", "Professor Nimnul"],
+    "characters": [
+      "Chip",
+      "Dale",
+      "Gadget Hackwrench",
+      "Monterey Jack",
+      "Zipper",
+      "Fat Cat",
+      "Professor Nimnul"
+    ],
     "legalSources": [
       {
         "name": "Disney+",
@@ -222,7 +240,14 @@
     "title": "Goof Troop",
     "year": 1992,
     "blurb": "Goofy and his son Max move to Spoonerville and end up next door to Pete, which is plenty of plot for any afternoon.",
-    "characters": ["Goofy", "Max Goof", "Pete", "P.J.", "Peg", "Pistol"],
+    "characters": [
+      "Goofy",
+      "Max Goof",
+      "Pete",
+      "P.J.",
+      "Peg",
+      "Pistol"
+    ],
     "legalSources": [
       {
         "name": "Disney+",
@@ -324,6 +349,474 @@
       {
         "name": "WorldCat",
         "url": "https://search.worldcat.org/search?q=DuckTales%202017",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "flintstones",
+    "title": "The Flintstones",
+    "year": 1960,
+    "blurb": "Fred Flintstone clocks out of the quarry in Bedrock and still finds a way to turn a quiet night with Wilma, Barney, and Betty into a scheme.",
+    "characters": [
+      "Fred Flintstone",
+      "Wilma Flintstone",
+      "Barney Rubble",
+      "Betty Rubble",
+      "Pebbles Flintstone",
+      "Bamm-Bamm Rubble",
+      "Dino"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=The+Flintstones+1960&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=The%20Flintstones%201960",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=The%20Flintstones%201960",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "jetsons",
+    "title": "The Jetsons",
+    "year": 1962,
+    "blurb": "George Jetson pushes buttons at Spacely Space Sprockets, then comes home to Jane, Judy, Elroy, and a dog named Astro who still needs a walk.",
+    "characters": [
+      "George Jetson",
+      "Jane Jetson",
+      "Judy Jetson",
+      "Elroy Jetson",
+      "Astro",
+      "Rosie",
+      "Mr. Spacely"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=The+Jetsons&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=The%20Jetsons",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=The%20Jetsons",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "scooby-doo",
+    "title": "Scooby-Doo, Where Are You!",
+    "year": 1969,
+    "blurb": "Scooby, Shaggy, Fred, Daphne, and Velma pile into the Mystery Machine and follow a spooky clue until the mask comes off.",
+    "characters": [
+      "Scooby-Doo",
+      "Shaggy Rogers",
+      "Fred Jones",
+      "Daphne Blake",
+      "Velma Dinkley"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Scooby-Doo+Where+Are+You&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Scooby-Doo%20Where%20Are%20You",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Scooby-Doo%20Where%20Are%20You",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "smurfs",
+    "title": "The Smurfs",
+    "year": 1981,
+    "blurb": "Papa Smurf keeps the village one step ahead of Gargamel, while Smurfette, Brainy, and the rest turn a tiny mushroom town into a full adventure.",
+    "characters": [
+      "Papa Smurf",
+      "Smurfette",
+      "Brainy Smurf",
+      "Hefty Smurf",
+      "Gargamel",
+      "Azrael"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=The+Smurfs+1981&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=The%20Smurfs%201981",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=The%20Smurfs%201981",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "inspector-gadget",
+    "title": "Inspector Gadget",
+    "year": 1983,
+    "blurb": "Inspector Gadget arrives with a trench coat full of gadgets and the wrong theory. Penny and Brain quietly solve the case before Dr. Claw gets away.",
+    "characters": [
+      "Inspector Gadget",
+      "Penny",
+      "Brain",
+      "Dr. Claw",
+      "Chief Quimby"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Inspector+Gadget+1983&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Inspector%20Gadget%201983",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Inspector%20Gadget%201983",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "tmnt-1987",
+    "title": "Teenage Mutant Ninja Turtles (1987)",
+    "year": 1987,
+    "blurb": "Leonardo, Michelangelo, Donatello, and Raphael train under Splinter in the sewers and come up for pizza, April O'Neil, and another round with Shredder.",
+    "characters": [
+      "Leonardo",
+      "Michelangelo",
+      "Donatello",
+      "Raphael",
+      "Splinter",
+      "April O'Neil",
+      "Shredder",
+      "Krang"
+    ],
+    "legalSources": [
+      {
+        "name": "Paramount+",
+        "url": "https://www.paramountplus.com/shows/teenage-mutant-ninja-turtles-1987/",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Teenage+Mutant+Ninja+Turtles+1987&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Teenage%20Mutant%20Ninja%20Turtles%201987",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Teenage%20Mutant%20Ninja%20Turtles%201987",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "garfield-and-friends",
+    "title": "Garfield and Friends",
+    "year": 1988,
+    "blurb": "Garfield would rather nap and eat than chase Monday, but Jon, Odie, and the neighbors keep handing him a reason to get off the table.",
+    "characters": [
+      "Garfield",
+      "Odie",
+      "Jon Arbuckle",
+      "Nermal"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Garfield+and+Friends&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Garfield%20and%20Friends",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Garfield%20and%20Friends",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "tiny-toons",
+    "title": "Tiny Toon Adventures",
+    "year": 1990,
+    "blurb": "Buster, Babs, and the Acme Acres class study under the classic Looney Tunes and still treat the lesson like a chase scene.",
+    "characters": [
+      "Buster Bunny",
+      "Babs Bunny",
+      "Plucky Duck",
+      "Hamton J. Pig",
+      "Dizzy Devil",
+      "Elmyra Duff"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Tiny+Toon+Adventures&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Tiny%20Toon%20Adventures",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Tiny%20Toon%20Adventures",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "rugrats",
+    "title": "Rugrats",
+    "year": 1991,
+    "blurb": "Tommy Pickles leads Chuckie, Phil, Lil, and Angelica through adventures that look ordinary from adult height and enormous from the floor.",
+    "characters": [
+      "Tommy Pickles",
+      "Chuckie Finster",
+      "Phil DeVille",
+      "Lil DeVille",
+      "Angelica Pickles",
+      "Susie Carmichael",
+      "Spike"
+    ],
+    "legalSources": [
+      {
+        "name": "Paramount+",
+        "url": "https://www.paramountplus.com/shows/rugrats/",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Rugrats+1991&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Rugrats%201991",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Rugrats%201991",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "little-mermaid",
+    "title": "The Little Mermaid (Series)",
+    "year": 1992,
+    "blurb": "Ariel explores Atlantica with Flounder and Sebastian, collecting stories from the surface world while King Triton tries to keep the tide calm.",
+    "characters": [
+      "Ariel",
+      "Sebastian",
+      "Flounder",
+      "King Triton",
+      "Scuttle",
+      "Ursula"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-838ad9b1-0d39-46c8-8304-33978182d3b4",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=The+Little+Mermaid+animated+series&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=The%20Little%20Mermaid%20animated%20series",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=The%20Little%20Mermaid%20animated%20series",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "batman-tas",
+    "title": "Batman: The Animated Series",
+    "year": 1992,
+    "blurb": "Bruce Wayne keeps a quieter face in Gotham while Batman, Robin, and Batgirl work the night shift against the Joker, Harley Quinn, and the rest of the rogues.",
+    "characters": [
+      "Batman",
+      "Bruce Wayne",
+      "Robin",
+      "Dick Grayson",
+      "Batgirl",
+      "Alfred Pennyworth",
+      "The Joker",
+      "Harley Quinn",
+      "Two-Face",
+      "Mr. Freeze"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Batman+The+Animated+Series&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Batman%20The%20Animated%20Series",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Batman%20The%20Animated%20Series",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "x-men",
+    "title": "X-Men: The Animated Series",
+    "year": 1992,
+    "blurb": "Professor Xavier's team, from Cyclops and Storm to Wolverine and Rogue, protects a world that is still deciding how it feels about mutants.",
+    "characters": [
+      "Wolverine",
+      "Cyclops",
+      "Jean Grey",
+      "Storm",
+      "Rogue",
+      "Gambit",
+      "Beast",
+      "Jubilee",
+      "Professor X",
+      "Magneto"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-8eaac297-16fe-4d83-bb0f-ca0a280b8b82",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=X-Men+The+Animated+Series&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=X-Men%20The%20Animated%20Series",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=X-Men%20The%20Animated%20Series",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "animaniacs",
+    "title": "Animaniacs",
+    "year": 1993,
+    "blurb": "Yakko, Wakko, and Dot escape the water tower for a song, a history lesson, or a visit from Pinky and the Brain, who are still planning to take over the world.",
+    "characters": [
+      "Yakko Warner",
+      "Wakko Warner",
+      "Dot Warner",
+      "Pinky",
+      "The Brain",
+      "Hello Nurse"
+    ],
+    "legalSources": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Animaniacs+1993&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Animaniacs%201993",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Animaniacs%201993",
+        "detail": "Find a library copy"
+      }
+    ]
+  },
+  {
+    "slug": "spider-man-1994",
+    "title": "Spider-Man: The Animated Series",
+    "year": 1994,
+    "blurb": "Peter Parker balances the Daily Bugle, Mary Jane, and a city that needs Spider-Man more often than it thanks him.",
+    "characters": [
+      "Spider-Man",
+      "Peter Parker",
+      "Mary Jane Watson",
+      "J. Jonah Jameson",
+      "Aunt May",
+      "Venom"
+    ],
+    "legalSources": [
+      {
+        "name": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-404d8ab1-36ab-4e54-92da-9aa0c847c8c9",
+        "detail": "Official series page"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com/s?k=Spider-Man+The+Animated+Series+1994&i=movies-tv",
+        "detail": "Search to buy or stream"
+      },
+      {
+        "name": "Apple TV",
+        "url": "https://tv.apple.com/us/search?term=Spider-Man%20The%20Animated%20Series%201994",
+        "detail": "Search the Apple TV catalog"
+      },
+      {
+        "name": "WorldCat",
+        "url": "https://search.worldcat.org/search?q=Spider-Man%20The%20Animated%20Series%201994",
         "detail": "Find a library copy"
       }
     ]

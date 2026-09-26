@@ -20,4 +20,5 @@ export type Show = {
 export type ResolvedLink = LegalSource & {
   href: string;
   provider: AffiliateProvider;
+  sponsored: boolean;
 };

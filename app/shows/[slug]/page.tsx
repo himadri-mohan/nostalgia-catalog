@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { JsonLd } from "@/components/JsonLd";
 import { ShowLibrary } from "@/components/ShowLibrary";
 import { getShow, getShows } from "@/lib/catalog";
 import { resolveLegalLinks } from "@/lib/outbound";
+import { showMetaDescription } from "@/lib/seo";
+import { absoluteUrl, SITE_NAME } from "@/lib/site";
 
 type ShowPageProps = {
   params: Promise<{ slug: string }>;
@@ -20,9 +24,27 @@ export async function generateMetadata({ params }: ShowPageProps): Promise<Metad
     return { title: "Show not found" };
   }
 
+  const description = showMetaDescription(show);
+  const path = `/shows/${show.slug}`;
+  const title = `Where to watch ${show.title} (${show.year})`;
+
   return {
     title: `${show.title} (${show.year})`,
-    description: `Where to watch ${show.title} (${show.year}) legally. Official Disney+ page plus store and library searches. No video is hosted here.`,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: path,
+      siteName: SITE_NAME,
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -37,6 +59,17 @@ export default async function ShowPage({ params }: ShowPageProps) {
 
   return (
     <article className="grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(18rem,0.8fr)]">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "TVSeries",
+          name: show.title,
+          datePublished: String(show.year),
+          description: show.blurb,
+          url: absoluteUrl(`/shows/${show.slug}`),
+          sameAs: show.legalSources.map((source) => source.url),
+        }}
+      />
       <div>
         <Link href="/" className="text-sm font-extrabold text-teal no-underline">
           Back to catalog
@@ -65,17 +98,20 @@ export default async function ShowPage({ params }: ShowPageProps) {
             Where to watch
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">
-            Disney+ opens the official series page. Store and library buttons are searches on those
-            services, because a direct purchase page can change. Availability depends on your country.
-            These links leave Nostalgia Catalog. This page does not play video.
+            Buttons open an official series page or a search on a store or library. A direct purchase
+            page can change, and availability depends on your country. These links leave Nostalgia
+            Catalog. This page does not play or host video.
           </p>
+          <div className="mt-3 max-w-2xl rounded-2xl border border-line bg-[#efe4d0] px-4 py-3 text-sm leading-6 text-ink">
+            <AffiliateDisclosure />
+          </div>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {links.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel={link.sponsored ? "sponsored noopener noreferrer" : "noopener noreferrer"}
                   className="flex min-h-20 flex-col justify-center rounded-2xl bg-navy px-4 py-3 text-paper no-underline hover:bg-[#22374f]"
                 >
                   <span className="font-extrabold">
@@ -83,6 +119,11 @@ export default async function ShowPage({ params }: ShowPageProps) {
                     <span className="sr-only"> (opens in a new tab)</span>
                   </span>
                   <span className="text-sm text-[#f3d48a]">{link.detail}</span>
+                  {link.sponsored ? (
+                    <span className="mt-1 text-xs font-bold uppercase tracking-wide text-paper">
+                      Affiliate link
+                    </span>
+                  ) : null}
                 </a>
               </li>
             ))}

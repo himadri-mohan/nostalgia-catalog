@@ -32,8 +32,8 @@ export function CatalogSearch({ shows }: { shows: Show[] }) {
         Find the official door for a classic cartoon.
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
-        Search a show title or any character name. Results open a page of streaming, store, and
-        library links. Nothing plays on this site.
+        Search a show title or any character name across {shows.length} classic series. Results open
+        official streaming, store, and library links. Nothing plays on this site.
       </p>
 
       <form role="search" className="mt-6" onSubmit={onSubmit}>
@@ -46,7 +46,7 @@ export function CatalogSearch({ shows }: { shows: Show[] }) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Try TaleSpin, Scrooge, or Gadget"
+            placeholder="Try Scooby, Yakko, or Scrooge"
             autoComplete="off"
             className="min-h-12 w-full rounded-xl border border-line bg-card px-4 text-base text-ink shadow-sm"
           />
@@ -69,9 +69,14 @@ export function CatalogSearch({ shows }: { shows: Show[] }) {
         </p>
 
         {results.length === 0 ? (
-          <p className="mt-6 rounded-2xl border border-dashed border-line bg-card px-5 py-8 text-muted">
-            No title or character matches that search. Try a shorter name, such as Baloo or Pooh.
-          </p>
+          <div className="mt-6 rounded-2xl border border-dashed border-line bg-card px-5 py-8">
+            <p className="font-extrabold text-navy">No matches on the shelf</p>
+            <p className="mt-2 text-muted">
+              Nothing in this catalog matches that title or character. The list only includes shows
+              with an official page, store, or library link. Try a shorter name, such as Baloo,
+              Scooby, or Pooh.
+            </p>
+          </div>
         ) : (
           <ul className="mt-4 grid gap-4 sm:grid-cols-2">
             {results.map(({ show, matchedCharacter }) => (
