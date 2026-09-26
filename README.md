@@ -58,12 +58,12 @@ AFFILIATE_DISNEY_CID=
 
 ## Deploy on Vercel from this GitHub repo
 
-The app is a Next.js App Router project. Vercel detects that from `package.json` and `app/`.
+The app is a Next.js App Router project. [`vercel.json`](vercel.json) pins the framework to Next.js, installs with `npm ci`, and builds with `npm run build`. That file overrides the project settings, including a project that was connected when this repository only contained a README. Vercel treats that first import as a static site and then looks for a `public` output directory, which this app does not create. Root directory stays the repo root.
 
 1. Push this repository to GitHub (`himadri-mohan/nostalgia-catalog`).
 2. Sign in at [vercel.com/new](https://vercel.com/new).
 3. Import the GitHub repository. If it is not listed, grant Vercel access to the repo first.
-4. Leave the framework preset as **Next.js**. Root directory is the repo root. Build command is `npm run build`. Output is the Next.js default.
+4. Leave the root directory as the repo root. `vercel.json` supplies the Next.js preset, install command, and build command.
 5. Open **Environment Variables** and add any affiliate ids you want, using the names in the table above. You can skip them and add them later.
 6. Deploy.
 
